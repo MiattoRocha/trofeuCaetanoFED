@@ -26,12 +26,12 @@ export class JogoService {
 
   postJogo(jogo: Jogo){
 
-    this.http.post<Jogo>(this.baseUrl,jogo)
+    this.http.post(this.baseUrl,jogo)
   }
 
   putJogo(jogo: Jogo) {
 
-    this.http.put<Jogo>(`${this.baseUrl}/${jogo.idJogo}`,jogo)
+    this.http.put(`${this.baseUrl}/${jogo.idJogo}`,jogo)
   }
 
   deleteJogo(jogo: Jogo) {

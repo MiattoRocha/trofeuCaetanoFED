@@ -26,12 +26,12 @@ export class JogadorService {
 
   postJogador(jogador: Jogador) {
 
-    this.http.post<Jogador>(this.baseUrl, jogador)
+    this.http.post(this.baseUrl, jogador)
   }
 
   putJogador(jogador: Jogador) {
 
-    this.http.put<Jogador>(`${this.baseUrl}/${jogador.idJogador}`, jogador)
+    this.http.put(`${this.baseUrl}/${jogador.idJogador}`, jogador)
   }
 
   deleteJogador(jogador: Jogador) {
